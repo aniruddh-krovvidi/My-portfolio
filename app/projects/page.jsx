@@ -20,7 +20,7 @@ const projects = [
   {
     title: "AK's Page",
     description: "My own personal portfolio website.",
-    githubLink: "https://github.com/aniruddh-krovvidi/AK",
+    githubLink: "https://github.com/aniruddh-krovvidi/My-portfolio",
     image: "/images/MyPage.png",
     technologies: ["Next.js", "Tailwind CSS", "Framer Motion"],
   },
