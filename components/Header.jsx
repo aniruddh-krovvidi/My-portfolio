@@ -1,4 +1,4 @@
-import Link from "next/Link"; //to enable client-side navigation
+import Link from "next/link"; //to enable client-side navigation
 import {Button} from "./ui/button";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
