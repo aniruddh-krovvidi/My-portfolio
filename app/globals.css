@@ -18,19 +18,37 @@
     .content {
         @apply font-primary bg-primary text-accent;
     }
-
-    @keyframes marquee {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(-50%); } 
-    }
-      
-    .animate-marquee {
-        display: flex;
-        animation: marquee 10s linear infinite;
-    }
-    .marquee-wrapper {
-        display: flex;
+    .marquee-container {
+        width: 200%;
         overflow: hidden;
-        width: 200%; 
-    }
+        display: flex;
+        background-color: bg-gray-950;
+      }
+      
+      .marquee {
+        display: flex;
+        animation: marquee 15s linear infinite;
+      }
+      
+      .tech-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5rem;
+      }
+      
+      .tech-image {
+        max-width: 80px;
+        max-height: 80px;
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      
 }
