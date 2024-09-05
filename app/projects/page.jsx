@@ -4,6 +4,13 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
+    title: "Task Scheduler",
+    description: "A microservices-based system that utilizes linear programming to optimize task distribution across distributed systems.",
+    githubLink: "https://github.com/aniruddh-krovvidi/Task-Optimizer",
+    image: "/images/wip.png",
+    technologies: ["Go", "Kotlin", "Docker","Kubernetes"],
+  },
+  {
     title: "CarMania",
     description: "A full-stack web application for buying and selling cars in Dubai.",
     githubLink: "https://github.com/aniruddh-krovvidi/CarMania-FullStack",
@@ -61,21 +68,22 @@ const Projects = () => {
     <section className="min-h-screen flex flex-col bg-primary text-white">
       <div className="flex-grow flex flex-col items-center py-10">
         <h1 className="text-4xl font-bold mb-6">My Showroom:</h1>
-        <div className="mb-8"></div> 
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+              className="bg-gray-800 p-5 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col justify-between"
             >
-              <h2 className="text-2xl font-semibold mb-2 hover:text-accent">{project.title}</h2>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="mb-4 rounded-lg shadow-md"
-              />
-              <p className="mb-4">{project.description}</p>
-              <div className="mb-4">
+              <div className="flex-grow">
+                <h2 className="text-2xl font-semibold mb-2 hover:text-accent">{project.title}</h2>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="mb-4 rounded-lg shadow-md"
+                />
+                <p className="mb-4">{project.description}</p>
+              </div>
+              <div className="mt-auto mb-4">
                 <span className="font-semibold">Tech Stack:</span>
                 <div className="flex flex-wrap gap-2 mt-2">
                   {project.technologies.map((tech, techIndex) => (
