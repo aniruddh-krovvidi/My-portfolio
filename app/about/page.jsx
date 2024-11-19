@@ -104,6 +104,10 @@ const AboutMe = () => {
               <span className="font-medium">Currently Vice President: Tech at TBP Engineering Honors Society</span>
             </li>
             <li className="flex items-center space-x-2">
+              <span role="img" aria-label="executive" className="text-xl">🧑🏻‍💻</span>
+              <span className="font-medium">Software Developer @ Triton Software Engineering</span>
+            </li>
+            <li className="flex items-center space-x-2">
               <span role="img" aria-label="Football" className="text-xl">⚽</span>
               <span className="font-medium">Avid fan of football, cricket, and F1. Always up for a not-so-friendly debate on the latest matches!</span>
             </li>
