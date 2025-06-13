@@ -19,7 +19,7 @@ const Header = () => {
                     <Nav />
                     <a href="mailto:akrovvidi05@gmail.com?subject=Discuss Job&body=I'd like to discuss a job/internship opportunity." 
                     target="_blank" rel="noopener noreferrer">
-                        <Button>Hire me</Button>
+                        <Button>Contact me</Button>
                     </a>
                 </div>
 
